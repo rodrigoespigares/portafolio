@@ -1,3 +1,4 @@
+/* Defino el grow del main*/
 main{
     flex-grow: 1;
 }
