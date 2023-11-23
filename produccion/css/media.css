@@ -1,0 +1,9 @@
+@media screen and (min-width : 576px){
+    .header__nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header__nav__link{
+        margin-left: 2rem;
+    }
+}

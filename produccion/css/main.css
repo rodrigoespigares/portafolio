@@ -1,0 +1,184 @@
+main{
+    flex-grow: 1;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    background:aliceblue;;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero__container{
+    width: 70%;
+    margin-bottom: 4rem;
+}
+.hero__container__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero h3{
+    font-size: 80%;
+}
+.hero__social{
+    margin-top: 2rem;
+    width: 5rem;
+}
+.hero__github_logo{
+    width: 100%;
+}
+.hero a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+.skills{
+    background-color: var(--primary);
+    min-height: 50vh;
+}
+
+.skills__galery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.skills__galery__element{
+    
+    flex-basis: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills__galery__element__icon{
+    width: 5rem;
+}
+.skills__galery__element__icon img{
+    width: 100%;
+    height: 100%;
+}
+.skills__galery__element__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.skills__design--progress {
+	width: 100%;
+	height: 10px;
+	background-color: lightcyan;
+    border-radius: 20px;
+	position: relative;
+}
+
+.skills__galery__element:hover .skills__design--progress__1 {
+	display: block;
+	height: 100%;
+    border-radius: 20px;
+	animation: progressAnimation1 1s linear forwards;
+}
+
+@keyframes progressAnimation1 {
+	0% {
+		width: 0;
+        background-color: red;
+	}
+    50%{
+        background-color: orange;
+    }
+	100% {
+        background-color: green;
+		width: 90%;
+        border-radius: 20px;
+	}
+}
+
+.projects__slider{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.projects__slider .slider-container {
+    width: 200px;
+    overflow: hidden;
+}
+
+.projects__slider .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.projects__slider .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.projects__slider .card {
+	position: relative;
+    width: 200px;
+    height: 300px;
+}
+/* Start card face style*/
+.projects__slider .card__front,
+.projects__slider .card__back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+/* Create card front style*/
+.projects__slider .card__front {
+    background-color: lightblue;
+	/*Original position*/
+    transform: rotateY(0deg);
+	/*transition to delay animation*/
+    transition: transform 0.5s;
+}
+/* Create card back style*/
+.projects__slider .card__back {
+	display: flex;
+	flex-direction: column;
+    background-color: lightgoldenrodyellow;
+	box-sizing: border-box;
+	font-size:medium;
+	color: black;
+	/*Make transparent*/
+    opacity: 0;
+	/*Original position*/
+    transform: rotateY(-180deg);
+	/*transition to delay animation and opacity*/
+    transition: transform 0.5s, opacity 0.5s; 
+	padding: 3rem;
+}
+.card__back p{
+	flex-grow: 1;
+	font-weight: lighter;
+	font-size: small;
+}
+.projects__slider .card:hover .card__front {
+	/*Animation rotateY*/
+    transform: rotateY(180deg);
+}
+.projects__slider .card:hover .card__back {
+	/*Show card*/
+    opacity: 1; 
+	/*Animation*/
+    transform: rotateY(0deg);
+}
