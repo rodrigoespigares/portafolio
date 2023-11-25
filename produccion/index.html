@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -15,14 +16,20 @@
 <body>
     <!--*-*-*-*-*-*-*-*-*-*-*-*-* HEADER *-*-*-*-*-*-*-*-*-*-*-*-*-->
     <header>
-        <nav class="header__nav">
-            <div class="header__nav__container"><a href="#" class="header__nav__container__link">Home</a></div>
-            <div class="header__nav__container"><a href="#opinions" class="header__nav__container__link">Opinions</a></div>
-            <div class="header__nav__container"><a href="#projects" class="header__nav__container__link">Projects</a></div>
-            <div class="header__nav__container"><a href="#skills" class="header__nav__container__link">Skill</a></div>
-            <div class="header__nav__container"><a href="#aboutMe" class="header__nav__container__link">About me</a></div>
-            <div class="header__nav__container"><a href="#contact" class="header__nav__container__link">Contact</a></div>
-        </nav>
+        <section class="top-nav header__nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="header__nav__container"><a href="#" class="header__nav__container__link">Home</a></li>
+                <li class="header__nav__container"><a href="#skills" class="header__nav__container__link">Skill</a></li>
+                <li class="header__nav__container"><a href="#projects" class="header__nav__container__link">Projects</a></li>
+                <li class="header__nav__container"><a href="#opinions" class="header__nav__container__link">Opinions</a></li>
+                <li class="header__nav__container"><a href="#aboutMe" class="header__nav__container__link">About me</a></li>
+                <li class="header__nav__container"><a href="#contact" class="header__nav__container__link">Contact</a></li>
+            </ul>
+        </section>
     </header>
     <main>
         <!--*-*-*-*-*-*-*-*-*-*-*-*-* HERO *-*-*-*-*-*-*-*-*-*-*-*-*-->
@@ -33,16 +40,16 @@
             <h1>Rodrigo Espigares</h1>
             <h3>Full stack developer</h3>
             <div class="hero__social">
-                <a href="https://github.com/rodrigoespigares"><img src="img/github.svg" alt="github" class="hero__github_logo"></a>
+                <a href="https://github.com/rodrigoespigares"><img src="img/icon/github.svg" alt="github" class="hero__github_logo"></a>
             </div>
         </section>
         <!--*-*-*-*-*-*-*-*-*-*-*-*-* SKILLS *-*-*-*-*-*-*-*-*-*-*-*-*-->
-        <section class="skills">
+        <section id="skills">
             <h2>skills</h2>
             <div class="skills__galery">
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/github.svg" alt="icono github">
+                        <img src="img/icon/github__skill.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">github</h3>
                     <div class="skills__design--progress">
@@ -51,7 +58,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/bootstrap.svg" alt="icono github">
+                        <img src="img/icon/bootstrap.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">bootstrap</h3>
                     <div class="skills__design--progress">
@@ -60,7 +67,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/css.svg" alt="icono github">
+                        <img src="img/icon/css.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">css</h3>
                     <div class="skills__design--progress">
@@ -69,7 +76,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/javascript.svg" alt="icono github">
+                        <img src="img/icon/javascript.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">javascript</h3>
                     <div class="skills__design--progress">
@@ -78,7 +85,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/veu.svg" alt="icono github">
+                        <img src="img/icon/veu.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">veu</h3>
                     <div class="skills__design--progress">
@@ -87,7 +94,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/react.svg" alt="icono github">
+                        <img src="img/icon/react.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">react</h3>
                     <div class="skills__design--progress">
@@ -96,7 +103,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/php.svg" alt="icono github">
+                        <img src="img/icon/php.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">php</h3>
                     <div class="skills__design--progress">
@@ -105,7 +112,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/laravel.svg" alt="icono github">
+                        <img src="img/icon/laravel.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">laravel</h3>
                     <div class="skills__design--progress">
@@ -114,7 +121,7 @@
                 </div>
                 <div class="skills__galery__element">
                     <div class="skills__galery__element__icon">
-                        <img src="img/symfony.svg" alt="icono github">
+                        <img src="img/icon/symfony.svg" alt="icono github">
                     </div>
                     <h3 class="skills__galery__element__title">symfony</h3>
                     <div class="skills__design--progress">
@@ -124,52 +131,206 @@
             </div>
         </section>
         <!--*-*-*-*-*-*-*-*-*-*-*-*-* PROJECTS *-*-*-*-*-*-*-*-*-*-*-*-*-->
-        <section class="projects">
+        <section id="projects">
             <h2>projects</h2>
             <div class="projects__slider">
-                <button id="prevBtn">Anterior</button>
+                <button id="prevBtn">
+                    <img src="img/icon/last.svg" alt="Button last">
+                </button>
                 <div class="slider-container">
                     <div class="slider">
                         <div class="slide">
-                            <div class="card">
-                                <article class="card__front">
-                                    <h3>Front card</h3>
-                                </article>
-                                <article class="card__back">
-                                    <h3>back card</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra odio vitae sem fermentum, pretium volutpat odio malesuada.</p>
-                                </article>
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/GuessingGame.png" alt="Guessing Game"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Guessing Game</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/GuessingGame">
+                                            <img src="img/icon/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/GuessingGame/">
+                                            <img src="img/icon/link.svg" alt="">
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                         <div class="slide">
-                            <div class="card">
-                                <article class="card__front">
-                                    <h3>Front card</h3>
-                                </article>
-                                <article class="card__back">
-                                    <h3>back card</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra odio vitae sem fermentum, pretium volutpat odio malesuada.</p>
-                                </article>
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/readingList.png" alt="Reading List"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Reading List</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/readingBook">
+                                            <img src="img/icon/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/readingBook/">
+                                            <img src="img/icon/link.svg" alt="">
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                         <div class="slide">
-                            <div class="card">
-                                <article class="card__front">
-                                    <h3>Front card</h3>
-                                </article>
-                                <article class="card__back">
-                                    <h3>back card</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra odio vitae sem fermentum, pretium volutpat odio malesuada.</p>
-                                </article>
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/StopWatch.png" alt="Stop Watch"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Stop Watch</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/StopWatch">
+                                            <img src="img/icon/github.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/StopWatch/">
+                                            <img src="img/icon/link.svg" alt="">
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/GroceryBud.png" alt="Grocery Bud"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Grocery Bud</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/GroceryBud">
+                                            <img src="img/icon/github.svg" alt="Link to repository">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/GroceryBud/">
+                                            <img src="img/icon/link.svg" alt="Link to production">
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/HangMan.png" alt="Hang Man"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Hang Man</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/HangMan">
+                                            <img src="img/icon/github.svg" alt="Link to repository">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/HangMan/">
+                                            <img src="img/icon/link.svg" alt="Link to production">
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/PairsGame.png" alt="Pairs Game"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Pairs Game</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/PairsGame">
+                                            <img src="img/icon/github.svg" alt="Link to repository">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/PairsGame/">
+                                            <img src="img/icon/link.svg" alt="Link to production">
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="skill-card">
+                                <header class="skill-card__header"><img class="skill-card__icon" src="img/projects/pongGame.png" alt="Pong Game"/></header>
+                                <section class="skill-card__body">
+                                    <h2 class="skill-card__title">Pong Game</h2>
+                                    <span class="skill-card__duration">Interactive web application</span>
+                                    <ul class="skill-card__knowledge">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    </ul>
+                                </section>
+                                <section class="repositorio">
+                                    <div class="repositorio__icon">
+                                        <a href="https://github.com/rodrigoespigares/pongGame">
+                                            <img src="img/icon/github.svg" alt="Link to repository">
+                                        </a>
+                                    </div>
+                                    <div class="repositorio__icon">
+                                        <a href="https://rodrigoespigares.github.io/pongGame/">
+                                            <img src="img/icon/link.svg" alt="Link to production">
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button id="nextBtn">Siguiente</button>
+                <button id="nextBtn">
+                    <img src="img/icon/next.svg" alt="Button next">
+                </button>
             </div>
         </section>
         <section></section>
+        <!--*-*-*-*-*-*-*-*-*-*-*-*-* ABOUT ME *-*-*-*-*-*-*-*-*-*-*-*-*-->
         <section id="aboutMe">
             <h2>about me</h2>
             <div class="aboutMe__content">
@@ -187,7 +348,7 @@
         </section>
         <section id="contact">
             <h2>contact</h2>
-            <form action="https://usebasin.com/f/29c9f5388263" method="POST" id="my-contact-form">
+            <form action="#" method="POST" id="my-contact-form">
                 <div class="form-row">
                    <div class="input-data">
                       <input type="text" name="name" required>

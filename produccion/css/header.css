@@ -1,5 +1,8 @@
 header{
 	width: 100%;
+	position: sticky;
+  	top: 0;
+	z-index: 1;
 }
 .header__nav {
 	width: 100%;
@@ -14,11 +17,11 @@ header{
 .header__nav__container__link:visited {
 	text-decoration: none;
 	color: var(--letter);
-	font-size: 1.5rem;
+	font-size: 3rem;
 }
 
 .header__nav .header__nav__container {
-	width: 10rem;
+	
 	padding: 1rem 1.5rem;
 	text-align: center;
 }
