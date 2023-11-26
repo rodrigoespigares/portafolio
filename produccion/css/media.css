@@ -6,4 +6,18 @@
     .header__nav__link{
         margin-left: 2rem;
     }
+    .hero__container{
+        width: 20% !important;
+    }
+    .repositorio__icon{
+        width: 3% !important;
+    }
+    .aboutMe__content{
+        display: flex ;
+        flex-direction: row !important;
+        width: 80%;
+    }
+    .aboutMe__content__img{
+        width: 40% !important;
+    }
 }
