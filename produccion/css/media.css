@@ -12,6 +12,12 @@
     .repositorio__icon{
         width: 3% !important;
     }
+    #projects .projects__slider .slider-container{
+        width: 400px !important;
+    }
+    .skill-card__body ul{
+        font-size: 2.5rem !important;
+    }
     .aboutMe__content{
         display: flex ;
         flex-direction: row !important;
@@ -19,5 +25,8 @@
     }
     .aboutMe__content__img{
         width: 40% !important;
+    }
+    .container__social__logo{
+        width: 4rem !important;
     }
 }
