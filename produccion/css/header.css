@@ -1,70 +1,77 @@
-header{
-	width: 100%;
-	position: sticky;
-  	top: 0;
-	z-index: 1;
-}
-.header__nav {
-	width: 100%;
-	background-color: var(--primary);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+/* Hago que permanezca en la parte superior */
+header {
+    /* Compruebo le ancho */
+    width: 100%;
+    /* Establezco la posicion como sticky */
+    position: sticky;
+    /* Lo dejo en la parte superior */
+    top: 0;
+    /* Hago que quede encima de toda la pagina*/
+    z-index: 1;
 }
 
+/* Estilo para la barra de navegación dentro del header */
+.header__nav {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los enlaces dentro de la barra de navegación */
 .header__nav__container__link:link,
 .header__nav__container__link:visited {
-	text-decoration: none;
-	color: var(--letter);
-	font-size: 3rem;
+    text-decoration: none;
+    color: var(--letter);
+    font-size: 3rem;
 }
 
 .header__nav .header__nav__container {
-	
-	padding: 1rem 1.5rem;
-	text-align: center;
+    padding: 1rem 1.5rem;
+    text-align: center;
 }
+
+/* Estilo para los enlaces y sus efectos al pasar el ratón (hover) */
 .header__nav .header__nav__container .header__nav__container__link {
-	position: relative;
-	padding: 0.2rem 0.5rem; /*para que el efecto se vea mejor*/
+    position: relative;
+    padding: 0.2rem 0.5rem; /* para que el efecto se vea mejor */
 }
 
 .header__nav .header__nav__container .header__nav__container__link:link::after,
 .header__nav .header__nav__container .header__nav__container__link:visited::after,
 .header__nav .header__nav__container .header__nav__container__link:link::before,
 .header__nav .header__nav__container .header__nav__container__link:visited::before {
-	content: "";
-	/*lo posiciono respecto .header__nav__container__link su padre .header__nav .header__nav__container .header__nav__container__link*/
-	position: absolute;
-	left: 0;
-	/*lo dimensiono, */
-	width: 100%; /*ancho=ancho de su padre*/
-	height: 0.25rem; /*alto->grosor de una líena*/
-	background-color: white;
-
-	transform: scaleX(0); /*en principio no es visible*/
-
-	transition: transform 0.6s ease-in-out;
+    content: "";
+    /* lo posiciono respecto .header__nav__container__link su padre .header__nav .header__nav__container .header__nav__container__link */
+    position: absolute;
+    left: 0;
+    /* lo dimensiono, */
+    width: 100%; /* ancho=ancho de su padre */
+    height: 0.25rem; /* alto->grosor de una línea */
+    background-color: white;
+    transform: scaleX(0); /* en principio no es visible */
+    transition: transform 0.6s ease-in-out;
 }
-/*hacemos la transformación*/
-/*diferenciamos entre after y before para que se pinte de forma diferente*/
+
+/* Hacemos la transformación al pasar el ratón */
+/* Diferenciamos entre after y before para que se pinte de forma diferente */
 .header__nav .header__nav__container .header__nav__container__link:link::after,
 .header__nav .header__nav__container .header__nav__container__link:visited::after {
-	top: 0;
-	/* Transform-origen es center por defecto */
-	transform-origin: left; /* para que empiece .header__nav__container__link dibujarse desde la izquierda*/
+    top: 0;
+    /* Transform-origen es center por defecto */
+    transform-origin: left; /* para que empiece .header__nav__container__link dibujarse desde la izquierda */
 }
 
 .header__nav .header__nav__container .header__nav__container__link:link::before,
 .header__nav .header__nav__container .header__nav__container__link:visited::before {
-	bottom: 0;
-	transform-origin: right;
+    bottom: 0;
+    transform-origin: right;
 }
 
-/*cuando aparece hover lo hacemos visible*/
-
+/* Cuando aparece hover lo hacemos visible */
 .header__nav .header__nav__container .header__nav__container__link:hover::after,
 .header__nav .header__nav__container .header__nav__container__link:hover::before {
-	transform: scaleX(1);
+    transform: scaleX(1);
 }

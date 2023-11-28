@@ -1,28 +1,37 @@
-footer{
-    font-size: 4rem;
-    background-color: var(--primary);
-    width: 100%;
-    min-height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 8rem
+/* Estilos para el pie de página */
+footer {
+    font-size: 4rem;  /* Tamaño de fuente grande para el pie de página */
+    background-color: var(--primary);  /* Color de fondo utilizando la variable --primary */
+    width: 100%;  /* Ancho del 100% para ocupar todo el ancho disponible */
+    min-height: 7rem;  /* Altura mínima del pie de página */
+    display: flex;  /* Configura el contenedor principal como flexible */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;  /* Centra los elementos verticalmente */
+    flex-direction: column;  /* Configura la dirección del diseño como columna */
+    margin-top: 8rem;  /* Margen superior grande para separar el pie de página del contenido superior */
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+
+/* Estilos para el contenedor dentro del pie de página */
+.container {
+    display: flex;  /* Configura el contenedor como flexible */
+    justify-content: space-around;  /* Espacio uniformemente distribuido entre los elementos secundarios */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    width: 100%;  /* Ancho del 100% para ocupar todo el ancho disponible */
 }
-.container__social{
-    display: flex;
-    gap: 2rem;
+
+/* Estilos para el contenedor de elementos sociales dentro del pie de página */
+.container__social {
+    display: flex;  /* Configura el contenedor de elementos sociales como flexible */
+    gap: 2rem;  /* Espacio entre los elementos sociales */
 }
-.container__social__logo{
-    width: 2rem;
+
+/* Estilos para el logo dentro del contenedor de elementos sociales */
+.container__social__logo {
+    width: 2rem;  /* Ancho fijo para el logo */
 }
-.container__social__logo__img{
-    width: 100%;
-    height: 100%;
+
+/* Estilos para la imagen dentro del logo en el contenedor de elementos sociales */
+.container__social__logo__img {
+    width: 100%;  /* Ancho del 100% para ocupar todo el espacio disponible */
+    height: 100%;  /* Altura del 100% para ocupar todo el espacio disponible */
 }

@@ -1,32 +1,101 @@
-@media screen and (min-width : 576px){
-    .header__nav{
-        flex-direction: row;
-        justify-content: center;
+/* Estilos aplicados cuando la pantalla tiene un ancho mínimo de 576px */
+@media screen and (min-width: 576px) {
+    
+    /* Ajustes para la barra de navegación */
+    .header__nav {
+        flex-direction: row; /* Cambia la dirección de flexión a fila */
+        justify-content: center; /* Centra los elementos horizontalmente */
     }
-    .header__nav__link{
+
+    /* Espaciado para los enlaces de navegación */
+    .header__nav__link {
         margin-left: 2rem;
     }
-    .hero__container{
-        width: 20% !important;
+
+    /* Ajustes para el contenedor del héroe */
+    .hero__container {
+        width: 20% !important; /* Cambia el ancho al 20%, !important para anular reglas previas */
     }
-    .repositorio__icon{
-        width: 3% !important;
+
+    /* Ajustes para el ícono del repositorio */
+    .repositorio__icon {
+        width: 3% !important; /* Cambia el ancho al 3%, !important para anular reglas previas */
     }
-    #projects .projects__slider .slider-container{
-        width: 400px !important;
+
+    /* Ajustes para el contenedor del slider en la sección de proyectos */
+    #projects .projects__slider .slider-container {
+        width: 400px !important; /* Cambia el ancho a 400px, !important para anular reglas previas */
     }
-    .skill-card__body ul{
-        font-size: 2.5rem !important;
+
+    /* Ajustes para el tamaño de fuente en las listas dentro de las skill cards */
+    .skill-card__body ul {
+        font-size: 2.5rem !important; /* Cambia el tamaño de fuente a 2.5rem, !important para anular reglas previas */
     }
-    .aboutMe__content{
-        display: flex ;
-        flex-direction: row !important;
-        width: 80%;
+
+    /* Ajustes para la disposición y ancho en la sección "Acerca de mí" */
+    .aboutMe__content {
+        display: flex; /* Cambia a un diseño flexible */
+        flex-direction: row !important; /* Cambia la dirección de flexión a fila, !important para anular reglas previas */
+        width: 80%; /* Cambia el ancho al 80% */
     }
-    .aboutMe__content__img{
-        width: 40% !important;
+
+    /* Ajustes para el ancho de la imagen en la sección "Acerca de mí" */
+    .aboutMe__content__img {
+        width: 40% !important; /* Cambia el ancho al 40%, !important para anular reglas previas */
     }
-    .container__social__logo{
-        width: 4rem !important;
+
+    /* Ajustes para el ancho de los logos sociales en la sección "Acerca de mí" */
+    .container__social__logo {
+        width: 4rem !important; /* Cambia el ancho a 4rem, !important para anular reglas previas */
     }
 }
+/* Estilos específicos para pantallas más grandes (min-width: 700px) */
+@media screen and (min-width: 700px) {
+    /* Mostrar el contenedor del botón del menú en pantallas más grandes */
+    .menu-button-container {
+      display: flex;
+    }
+  
+    /* Estilo del menú en pantallas más más grandes */
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Transiciones para el despliegue del menú en pantallas más grandes */
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid var(--primary);
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    /* Estilos específicos para cada elemento del menú en pantallas más grandes */
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: var(--primary);
+    }
+  
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }

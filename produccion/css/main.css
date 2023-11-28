@@ -49,387 +49,481 @@ section{
     text-decoration: none;
     color: var(--secondary);
 }
-#skills{
-    background-color: var(--primary);
-    padding: 4rem 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
+/* Estilos para la sección de habilidades */
+#skills {
+    background-color: var(--primary);  /* Fondo con el color primario definido en las variables CSS */
+    padding: 4rem 0;  /* Espaciado interno de 4rem arriba y abajo, 0 a los lados */
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;  /* Distribuye el espacio entre los elementos hijos */
+    flex-direction: column;  /* Organiza los elementos hijos en columna */
+    align-items: center;  /* Centra los elementos en el eje transversal */
+    gap: 5rem;  /* Espacio vertical entre los elementos hijos de 5rem */
 }
 
-.skills__galery{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 80%;
+/* Estilos para la galería de habilidades */
+.skills__galery {
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    justify-content: center;  /* Centra los elementos en el eje principal */
+    flex-wrap: wrap;  /* Los elementos se envuelven a la siguiente fila cuando no hay espacio */
+    gap: 1rem;  /* Espacio entre los elementos hijos de 1rem */
+    width: 80%;  /* Ancho del 80% del contenedor padre */
 }
-.skills__galery__element{
-    
-    flex-basis: 12rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+/* Estilos para cada elemento en la galería de habilidades */
+.skills__galery__element {
+    flex-basis: 12rem;  /* Tamaño base del elemento flexible */
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    align-items: center;  /* Centra los elementos en el eje transversal */
+    flex-direction: column;  /* Organiza los elementos hijos en columna */
 }
-.skills__galery__element__icon{
-    width: 5rem;
+
+/* Estilos para los iconos dentro de los elementos de la galería de habilidades */
+.skills__galery__element__icon {
+    width: 5rem;  /* Ancho del icono */
 }
-.skills__galery__element__icon img{
-    width: 100%;
-    height: 100%;
+
+/* Estilos para las imágenes dentro de los iconos en la galería de habilidades */
+.skills__galery__element__icon img {
+    width: 100%;  /* Ancho de la imagen al 100% del contenedor */
+    height: 100%;  /* Altura de la imagen al 100% del contenedor */
 }
-.skills__galery__element__title{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
+
+/* Estilos para los títulos dentro de los elementos de la galería de habilidades */
+.skills__galery__element__title {
+    text-align: center;  /* Alineación del texto al centro */
+    text-transform: uppercase;  /* Transforma el texto a mayúsculas */
+    font-size: 2rem;  /* Tamaño de fuente de 2rem */
 }
+
+/* Estilos para las barras de progreso en la galería de habilidades */
 .skills__design--progress {
-	width: 100%;
-	height: 10px;
-	background-color: lightcyan;
-    border-radius: 20px;
-	position: relative;
+	width: 100%;  /* Ancho del 100% del contenedor */
+	height: 10px;  /* Altura de la barra de progreso */
+	background-color: lightcyan;  /* Color de fondo de la barra de progreso */
+    border-radius: 20px;  /* Radio de borde para la barra de progreso */
+	position: relative;  /* Posición relativa para posicionar elementos hijos absolutamente */
 }
 
+/* Estilos para la barra de progreso al hacer hover o activar */
 .skills__galery__element:hover .skills__design--progress__1,
 .skills__galery__element:active .skills__design--progress__1 {
-	display: block;
-	height: 100%;
-    border-radius: 20px;
-	animation: progressAnimation1 1s linear forwards;
+	display: block;  /* Muestra el bloque al hacer hover o activar */
+	height: 100%;  /* Altura de la barra de progreso al 100% */
+    border-radius: 20px;  /* Radio de borde para la barra de progreso */
+	animation: progressAnimation1 1s linear forwards;  /* Animación de la barra de progreso */
 }
 
+/* Keyframes para la animación de la barra de progreso */
 @keyframes progressAnimation1 {
 	0% {
-		width: 0;
-        background-color: red;
+		width: 0;  /* Ancho inicial de la barra de progreso */
+        background-color: red;  /* Color inicial de la barra de progreso */
 	}
     50%{
-        background-color: orange;
+        background-color: orange;  /* Color intermedio de la barra de progreso */
     }
 	100% {
-        background-color: green;
-		width: 90%;
-        border-radius: 20px;
+        background-color: green;  /* Color final de la barra de progreso */
+		width: 90%;  /* Ancho final de la barra de progreso */
+        border-radius: 20px;  /* Radio de borde para la barra de progreso */
 	}
 }
-
 /*PROJECTS*/
-#projects{
-    width: 100%;
-    min-height: 80vh;
-}
-/*start section slider + buttons*/
-#projects .projects__slider{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    min-height: 60vh;
-}
-/*start details buttons*/
-#projects button{
-    background-color: transparent;
-    height: 200px;
-    border: none;
-}
-#projects button img{
-    width: 10rem;
-}
-#projects button:hover{
-    cursor: pointer;
+#projects {
+    width: 100%;  /* Ancho completo del contenedor padre */
+    min-height: 80vh;  /* Altura mínima del 80% de la ventana gráfica */
 }
 
+/* Estilos para el contenedor del slider y botones en la sección de proyectos */
+#projects .projects__slider {
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    justify-content: space-around;  /* Distribuye el espacio alrededor de los elementos hijos */
+    align-items: center;  /* Centra los elementos en el eje transversal */
+    font-size: 2rem;  /* Tamaño de fuente de 2rem */
+    min-height: 60vh;  /* Altura mínima del 60% de la ventana gráfica */
+}
 
-/*start details slider*/
+/* Estilos para los botones en la sección de proyectos */
+#projects button {
+    background-color: transparent;  /* Fondo transparente para los botones */
+    height: 200px;  /* Altura fija de 200px para los botones */
+    border: none;  /* Sin bordes para los botones */
+}
+
+#projects button img {
+    width: 10rem;  /* Ancho de la imagen dentro de los botones */
+}
+
+#projects button:hover {
+    cursor: pointer;  /* Cambia el cursor a una mano al hacer hover sobre los botones */
+}
+
+/* Estilos para el contenedor del slider en la sección de proyectos */
 #projects .projects__slider .slider-container {
-    width: 200px;
-    overflow: hidden;
+    width: 200px;  /* Ancho fijo del contenedor del slider */
+    overflow: hidden;  /* Oculta el contenido que excede el ancho del contenedor */
 }
-/*Animation */
+
+/* Estilos para la animación del slider en la sección de proyectos */
 #projects .projects__slider .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    transition: transform 0.5s ease-in-out;  /* Transición suave del slider */
 }
 
 #projects .projects__slider .slide {
-    min-width: 100%;
-    box-sizing: border-box;
+    min-width: 100%;  /* Ancho mínimo del 100% para cada slide */
+    box-sizing: border-box;  /* La anchura incluye el relleno y el borde, excluye el margen */
 }
 
-/*PROJECT CARD*/
-.skill-card a{
-    text-decoration: none;
-    color: var(--secondary);
+/* Estilos para las tarjetas de proyectos en la sección de proyectos */
+.skill-card a {
+    text-decoration: none;  /* Sin subrayado para los enlaces dentro de las tarjetas */
+    color: var(--secondary);  /* Color secundario definido en las variables CSS */
 }
+
 .skill-card {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    
-    width: 100%;
-    background-color: #FFF;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    cursor: pointer;
+    font-size: 3rem;  /* Tamaño de fuente de 3rem para las tarjetas */
+    display: flex;  /* Utiliza el modelo de caja flexible */
+    flex-direction: column;  /* Organiza los elementos hijos en columna */
+    width: 100%;  /* Ancho completo del contenedor padre */
+    background-color: #FFF;  /* Fondo blanco para las tarjetas */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);  /* Sombra para las tarjetas */
+    cursor: pointer;  /* Cursor apuntador al pasar sobre las tarjetas */
 }
-.skill-card h2{
-    text-align: left;
-    max-width: 180px;
+
+.skill-card h2 {
+    text-align: left;  /* Alineación del texto a la izquierda */
+    max-width: 180px;  /* Ancho máximo de 180px para el título */
 }
+
 .skill-card:hover,
 .skill-card:active {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);  /* Sombra aumentada al hacer hover o activar */
 }
+
 .skill-card:hover .skill-card__header,
-.skill-card:active .skill-card__header  {
-    height: 10rem;
+.skill-card:active .skill-card__header {
+    height: 10rem;  /* Altura aumentada del encabezado al hacer hover o activar */
 }
+
 .skill-card:hover .skill-card__header .skill-card__icon,
 .skill-card:active .skill-card__header .skill-card__icon {
-transform: translateX(-50%) translateY(-50%) scale(3);
+    transform: translateX(-50%) translateY(-50%) scale(3);  /* Transformación del icono al hacer hover o activar */
 }
+
 .skill-card:hover .skill-card__body,
-.skill-card:active .skill-card__body  {
-min-height: 25rem;
+.skill-card:active .skill-card__body {
+    min-height: 25rem;  /* Altura mínima aumentada del cuerpo al hacer hover o activar */
 }
+
+/* Estilos para la animación del conocimiento en las tarjetas de proyectos */
 .skill-card:hover .skill-card__body .skill-card__knowledge li,
-.skill-card:active .skill-card__body .skill-card__knowledge li  {
-transform: translateX(0);
-transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
-transition-duration: 0.5s;
+.skill-card:active .skill-card__body .skill-card__knowledge li {
+    transform: translateX(0);  /* Desplazamiento horizontal al hacer hover o activar */
+    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);  /* Función de temporización de la transición */
+    transition-duration: 0.5s;  /* Duración de la transición */
 }
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) ,
-.skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(1){
-transition-delay: 0.25s;
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1),
+.skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(1) {
+    transition-delay: 0.25s;  /* Retraso de la transición para el primer elemento */
 }
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2), 
-.skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(2){
-transition-delay: 0.5s;
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2),
+.skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(2) {
+    transition-delay: 0.5s;  /* Retraso de la transición para el segundo elemento */
 }
+
 .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3),
 .skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(3) {
-transition-delay: 0.75s;
+    transition-delay: 0.75s;  /* Retraso de la transición para el tercer elemento */
 }
+
 .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4),
 .skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(4) {
-transition-delay: 1s;
+    transition-delay: 1s;  /* Retraso de la transición para el cuarto elemento */
 }
+
 .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5),
 .skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(5) {
-transition-delay: 1.25s;
+    transition-delay: 1.25s;  /* Retraso de la transición para el quinto elemento */
 }
+
 .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6),
 .skill-card:active .skill-card__body .skill-card__knowledge li:nth-child(6) {
-transition-delay: 1.5s;
+    transition-delay: 1.5s;  /* Retraso de la transición para el sext*/
 }
+
+/* Estilos para el encabezado de la tarjeta de habilidades */
 .skill-card .skill-card__header {
-position: relative;
-background-color: #EFD81D;
-height: 17rem;
-transition: height 0.5s;
-overflow: hidden;
-z-index: 0;
+    position: relative;  /* Posicionamiento relativo para los elementos hijos posicionados de manera absoluta */
+    background-color: #EFD81D;  /* Color de fondo del encabezado */
+    height: 17rem;  /* Altura fija del encabezado */
+    transition: height 0.5s;  /* Transición suave de la altura con una duración de 0.5 segundos */
+    overflow: hidden;  /* Oculta el contenido que excede la altura del encabezado */
+    z-index: 0;  /* Índice z para controlar el apilamiento de capas */
 }
+
+/* Estilos para el icono dentro del encabezado de la tarjeta de habilidades */
 .skill-card .skill-card__header .skill-card__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    display: block;
-    width: 50rem;
-    height: auto;
-    transition: transform 0.5s;
+    position: absolute;  /* Posicionamiento absoluto para el icono dentro del encabezado */
+    top: 50%;  /* Coloca la parte superior del icono en el centro vertical del encabezado */
+    left: 50%;  /* Coloca la parte izquierda del icono en el centro horizontal del encabezado */
+    transform: translateY(-50%) translateX(-50%);  /* Centra el icono dentro del encabezado */
+    display: block;  /* Muestra el icono como bloque */
+    width: 50rem;  /* Ancho fijo del icono */
+    height: auto;  /* Altura automática para mantener la proporción original del icono */
+    transition: transform 0.5s;  /* Transición suave del icono con una duración de 0.5 segundos */
 }
+
+/* Estilos para el cuerpo de la tarjeta de habilidades */
 .skill-card .skill-card__body {
-height: 15rem;
-transition: height 0.5s;
-overflow: hidden;
+    height: 15rem;  /* Altura fija del cuerpo */
+    transition: height 0.5s;  /* Transición suave de la altura con una duración de 0.5 segundos */
+    overflow: hidden;  /* Oculta el contenido que excede la altura del cuerpo */
 }
+
+/* Estilos para el título dentro del cuerpo de la tarjeta de habilidades */
 .skill-card .skill-card__body .skill-card__title {
-font-size: 1.4em;
-font-weight: 600;
-text-transform: uppercase;
+    font-size: 1.4em;  /* Tamaño de fuente para el título */
+    font-weight: 600;  /* Grosor de la fuente para el título */
+    text-transform: uppercase;  /* Transforma el texto a mayúsculas */
 }
+
+/* Estilos para la duración dentro del cuerpo de la tarjeta de habilidades */
 .skill-card .skill-card__body .skill-card__duration {
-color: #9E9E9E;
-font-style: italic;
+    color: #9E9E9E;  /* Color del texto para la duración */
+    font-style: italic;  /* Estilo de fuente en cursiva para la duración */
 }
+
+/* Estilos para la lista de conocimientos dentro del cuerpo de la tarjeta de habilidades */
 .skill-card .skill-card__body .skill-card__knowledge {
-margin-top: 10px;
-color: #424242;
+    margin-top: 10px;  /* Margen superior para la lista de conocimientos */
+    color: #424242;  /* Color del texto para la lista de conocimientos */
 }
+
+/* Estilos para cada ítem de conocimiento en la lista dentro del cuerpo de la tarjeta de habilidades */
 .skill-card .skill-card__body .skill-card__knowledge li {
-margin-top: 5px;
-transition-duration: 0;
-transition-delay: 0.5s;
-transform: translateX(-100%);
+    margin-top: 5px;  /* Margen superior para cada ítem de conocimiento */
+    transition-duration: 0;  /* Duración de la transición */
+    transition-delay: 0.5s;  /* Retraso de la transición */
+    transform: translateX(-100%);  /* Desplazamiento horizontal para ocultar los ítems inicialmente */
 }
-/*Repository*/
-.repositorio{
-    display: flex;
-    align-items: center;
+
+/* Estilos para el contenedor del repositorio */
+.repositorio {
+    display: flex;  /* Configura el contenedor como un contenedor flexible */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
 }
-.repositorio .repositorio__icon{
-    width: 10%;
-    height: auto;
+
+/* Estilos para el icono del repositorio dentro del contenedor */
+.repositorio .repositorio__icon {
+    width: 10%;  /* Ancho del icono del repositorio en relación con el contenedor */
+    height: auto;  /* Altura automática para mantener la proporción original del icono */
 }
-.repositorio img{
-    width: 100%;
-    height: 100%;
+
+/* Estilos para las imágenes dentro del contenedor del repositorio */
+.repositorio img {
+    width: 100%;  /* Ancho de la imagen del repositorio al 100% del contenedor */
+    height: 100%;  /* Altura de la imagen del repositorio al 100% del contenedor */
 }
 
 
 /* BELIEFS */
-#beliefs{
-    width: 100%;
+/* Estilos para la sección de creencias */
+#beliefs {
+    width: 100%;  /* Ancho completo para abarcar el contenedor principal */
 }
-#beliefs__content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    gap: 3rem;
+
+/* Estilos para el contenido de la sección de creencias */
+#beliefs__content {
+    display: flex;  /* Configura el contenido como un contenedor flexible */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    flex-direction: column;  /* Configura la dirección del diseño como columna */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    padding: 3rem;  /* Espaciado interno de 3rem en todas las direcciones */
+    gap: 3rem;  /* Espaciado vertical entre elementos del contenido */
 }
-.beliefs__content__article{
-    border: 1px solid var(--primary);
-    padding: 2rem;
-    border-radius: 5px;
-    max-width: 60%;
+
+/* Estilos para cada artículo de creencias */
+.beliefs__content__article {
+    border: 1px solid var(--primary);  /* Borde de 1px sólido con el color primario */
+    padding: 2rem;  /* Espaciado interno de 2rem en todas las direcciones */
+    border-radius: 5px;  /* Borde redondeado con un radio de 5px */
+    max-width: 60%;  /* Ancho máximo del artículo limitado al 60% del contenedor principal */
 }
-.beliefs__content__article h3{
-    font-size: 2rem;
-    font-weight: 700;
+
+/* Estilos para los encabezados de los artículos de creencias */
+.beliefs__content__article h3 {
+    font-size: 2rem;  /* Tamaño de fuente de 2rem para los encabezados */
+    font-weight: 700;  /* Peso de la fuente, 700 indica un peso de fuente más grueso */
 }
-.beliefs__content__article p{
-    font-size: 2rem;
+
+/* Estilos para los párrafos de los artículos de creencias */
+.beliefs__content__article p {
+    font-size: 2rem;  /* Tamaño de fuente de 2rem para los párrafos */
 }
 
 
-/*ABOUT ME*/
-#aboutMe{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--primary);
-    gap: 3rem;
+/* Estilos para la sección "ABOUT ME" */
+#aboutMe {
+    display: flex;  /* Configura el contenedor principal como flexible */
+    justify-content: space-around;  /* Distribuye uniformemente el espacio alrededor de los elementos hijos */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    flex-direction: column;  /* Configura la dirección del diseño como columna */
+    background-color: var(--primary);  /* Fondo con el color primario definido en las variables */
+    gap: 3rem;  /* Espaciado vertical entre elementos hijos */
 }
-.aboutMe__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3rem;
+
+/* Estilos para el contenido de la sección "ABOUT ME" */
+.aboutMe__content {
+    display: flex;  /* Configura el contenido como un contenedor flexible */
+    flex-direction: column;  /* Configura la dirección del diseño como columna */
+    justify-content: space-around;  /* Distribuye uniformemente el espacio alrededor de los elementos hijos */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    gap: 3rem;  /* Espaciado vertical entre elementos hijos */
 }
-.aboutMe__content__img{
-    width: 70%;
-    height: auto;
+
+/* Estilos para la imagen en la sección "ABOUT ME" */
+.aboutMe__content__img {
+    width: 70%;  /* Ancho del 70% del contenedor padre */
+    height: auto;  /* Altura automática para mantener la proporción */
 }
-.aboutMe__content__img img{
-    width: 100%;
-    height: 100%;
+
+/* Estilos para la imagen dentro del contenedor de la sección "ABOUT ME" */
+.aboutMe__content__img img {
+    width: 100%;  /* Ancho del 100% para llenar completamente el contenedor */
+    height: 100%;  /* Altura del 100% para llenar completamente el contenedor */
 }
-.aboutMe__content__text{
-    width: 70%;
-    font-size: 4rem;
+
+/* Estilos para el texto en la sección "ABOUT ME" */
+.aboutMe__content__text {
+    width: 70%;  /* Ancho del 70% del contenedor padre */
+    font-size: 4rem;  /* Tamaño de fuente de 4rem */
 }
-.aboutMe__content__text__p{
-    margin-top: 2rem;
+
+/* Estilos para el párrafo dentro del texto en la sección "ABOUT ME" */
+.aboutMe__content__text__p {
+    margin-top: 2rem;  /* Margen superior de 2rem */
 }
 
 
-/*Contact*/
-#contact{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Estilos para la sección "Contact" */
+#contact {
+    background-color: #fff;  /* Fondo blanco para la sección de contacto */
+    display: flex;  /* Configura el contenedor principal como flexible */
+    flex-direction: column;  /* Configura la dirección del diseño como columna */
+    align-items: center;  /* Centra los elementos horizontalmente dentro del contenedor */
 }
 
-#contact form{
-    padding: 30px 0 0 0;
+/* Estilos para el formulario dentro de la sección "Contact" */
+#contact form {
+    padding: 30px 0 0 0;  /* Padding del formulario */
 }
-#contact form .form-row{
-    display: flex;
-    margin: 32px 0;
+
+/* Estilos para las filas del formulario en la sección "Contact" */
+#contact form .form-row {
+    display: flex;  /* Configura las filas del formulario como flexibles */
+    margin: 32px 0;  /* Margen vertical entre las filas del formulario */
 }
-form .form-row .input-data{
-    width: 100%;
-    height: 40px;
-    margin: 0 20px;
-    position: relative;
+
+/* Estilos para los elementos de entrada de datos en el formulario */
+form .form-row .input-data {
+    width: 100%;  /* Ancho del 100% para ocupar todo el espacio disponible */
+    height: 40px;  /* Altura de los campos de entrada de datos */
+    margin: 0 20px;  /* Margen horizontal entre los campos de entrada de datos */
+    position: relative;  /* Posición relativa para posicionar elementos secundarios */
 }
-form .form-row .textarea{
-    height: 70px;
+
+/* Estilos para el área de texto en el formulario */
+form .form-row .textarea {
+    height: 70px;  /* Altura del área de texto */
 }
-#contact .input-data input, .textarea textarea{
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 17px;
-    border-bottom: 2px solid var(--primary);
+
+/* Estilos para los campos de entrada de datos en el formulario */
+#contact .input-data input, .textarea textarea {
+    display: block;  /* Configura los campos de entrada como bloques */
+    width: 100%;  /* Ancho del 100% para llenar el contenedor */
+    height: 100%;  /* Altura del 100% para llenar el contenedor */
+    border: none;  /* Sin borde en los campos de entrada */
+    font-size: 17px;  /* Tamaño de fuente para los campos de entrada */
+    border-bottom: 2px solid var(--primary);  /* Borde inferior de 2px con el color primario definido en las variables */
 }
+
+/* Estilos para las etiquetas de los campos de entrada de datos en el formulario */
 #contact .input-data input:focus ~ label, .textarea textarea:focus ~ label,
-#contact .input-data input:valid ~ label, .textarea textarea:valid ~ label{
-    transform: translateY(-23px) translateX(10px);
-    font-size: 14px;
-    color: var(--letra);
-    background-color: #fff;
-    padding-right: 2px;
-    padding-left: 2px;
+#contact .input-data input:valid ~ label, .textarea textarea:valid ~ label {
+    transform: translateY(-23px) translateX(10px);  /* Desplazamiento y transformación de las etiquetas al recibir el foco o contener datos */
+    font-size: 14px;  /* Tamaño de fuente más pequeño para las etiquetas */
+    color: var(--letra);  /* Color del texto definido en las variables */
+    background-color: #fff;  /* Fondo blanco para las etiquetas */
+    padding-right: 2px;  /* Relleno derecho de las etiquetas */
+    padding-left: 2px;  /* Relleno izquierdo de las etiquetas */
 }
-#contact .textarea textarea{
-    resize: none;
-    padding-top: 10px;
+
+/* Estilos para el área de texto en el formulario */
+#contact .textarea textarea {
+    resize: none;  /* Deshabilita la capacidad de redimensionar el área de texto */
+    padding-top: 10px;  /* Relleno superior del área de texto */
 }
-#contact .input-data label{
-    position: absolute;
-    pointer-events: none;
-    bottom: 10px;
-    font-size: 16px;
-    transition: all 0.3s ease;
+
+/* Estilos para las etiquetas del área de texto en el formulario */
+#contact .input-data label {
+    position: absolute;  /* Posición absoluta para superponer las etiquetas en los campos de entrada */
+    pointer-events: none;  /* Evita que las etiquetas interfieran con eventos del puntero */
+    bottom: 10px;  /* Espacio inferior para las etiquetas */
+    font-size: 16px;  /* Tamaño de fuente para las etiquetas */
+    transition: all 0.3s ease;  /* Transición suave para las etiquetas */
 }
-#contact .textarea label{
-    bottom: 40px;
-    background: #fff;
+
+/* Estilos para las etiquetas del área de texto en el formulario */
+#contact .textarea label {
+    bottom: 40px;  /* Espacio inferior mayor para las etiquetas del área de texto */
+    background: #fff;  /* Fondo blanco para las etiquetas del área de texto */
 }
-.input-data .underline{
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
+
+/* Estilos para la línea subrayada en los campos de entrada de datos en el formulario */
+.input-data .underline {
+    position: absolute;  /* Posición absoluta para superponer la línea subrayada en los campos de entrada */
+    bottom: 0;  /* En el borde inferior de los campos de entrada */
+    height: 2px;  /* Altura de la línea subrayada */
+    width: 100%;  /* Ancho del 100% para llenar el contenedor */
 }
-.input-data .underline:before{
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background: var(--letra);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
+
+/* Estilos para la animación de la línea subrayada en los campos de entrada de datos en el formulario */
+.input-data .underline:before {
+    position: absolute;  /* Posición absoluta para superponer la línea animada */
+    content: "";  /* Sin contenido, pero necesario para la pseudoelemento ::before */
+    height: 2px;  /* Altura de la línea animada */
+    width: 100%;  /* Ancho del 100% para llenar el contenedor */
+    background: var(--letra);  /* Color de la línea animada definido en las variables */
+    transform: scaleX(0);  /* Inicialmente, la línea animada tiene un ancho de cero */
+    transform-origin: center;  /* Origen de la transformación en el centro */
+    transition: transform 0.3s ease;  /* Transición suave para la animación de la línea subrayada */
 }
-    .input-data input:focus ~ .underline:before,
-    .input-data input:valid ~ .underline:before,
-    .textarea textarea:focus ~ .underline:before,
-    .textarea textarea:valid ~ .underline:before{
-    transform: scale(1);
+
+/* Estilos para la animación de la línea subrayada al recibir el foco o contener datos */
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+    transform: scale(1);  /* La línea subrayada alcanza su ancho completo */
 }
-.submit-btn .input-data{
-    overflow: hidden;
+
+/* Estilos para el botón de envío en el formulario */
+.submit-btn .input-data {
+    overflow: hidden;  /* Oculta cualquier contenido adicional fuera del contenedor del botón */
 }
-.submit-btn .input-data button{
-    height: 100%;
-    width: 300%;
-    position: absolute;
-    left: -100%;
-    background: linear-gradient(#56d8e4, #9f01ea);
-    transition: all 0.4s;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+
+/* Estilos para el botón de envío en el formulario */
+.submit-btn .input-data button {
+    height: 100%;  /* Altura del 100% para llenar el contenedor del botón */
+    width: 300%;  /* Ancho del 300% para llenar el contenedor del boton*/
+    position: absolute; /*Establecer La posicion como absoluta de este boton*/
+    left: -100%; /*Retiro el left de este boton*/
+    background: linear-gradient(#56d8e4, #9f01ea); /*Hacer un gradiante de fondo*/
+    transition: all 0.4s; /*Hacer una transicion*/
+    color: #fff; /*Color del texto*/
+    text-transform: uppercase; /*Transformalo a mayúsculas*/
+    font-size: 1.5rem; /*Establezco un tamaño a la fuente*/
 }
