@@ -119,7 +119,7 @@ section{
 /*PROJECTS*/
 #projects{
     width: 100%;
-    max-height: 70vh;
+    min-height: 80vh;
 }
 /*start section slider + buttons*/
 #projects .projects__slider{
@@ -192,7 +192,7 @@ transform: translateX(-50%) translateY(-50%) scale(3);
 }
 .skill-card:hover .skill-card__body,
 .skill-card:active .skill-card__body  {
-min-height: 20rem;
+min-height: 25rem;
 }
 .skill-card:hover .skill-card__body .skill-card__knowledge li,
 .skill-card:active .skill-card__body .skill-card__knowledge li  {
