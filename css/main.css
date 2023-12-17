@@ -527,3 +527,44 @@ form .form-row .textarea {
     text-transform: uppercase; /*Transformalo a mayúsculas*/
     font-size: 1.5rem; /*Establezco un tamaño a la fuente*/
 }
+
+/* Estilos aplicados cuando la pantalla tiene un ancho mínimo de 576px */
+@media screen and (min-width: 576px) {
+
+    /* Ajustes para el contenedor del héroe */
+    .hero__container {
+        width: 20% !important; /* Cambia el ancho al 20%, !important para anular reglas previas */
+    }
+
+    /* Ajustes para el ícono del repositorio */
+    .repositorio__icon {
+        width: 3% !important; /* Cambia el ancho al 3%, !important para anular reglas previas */
+    }
+
+    /* Ajustes para el contenedor del slider en la sección de proyectos */
+    #projects .projects__slider .slider-container {
+        width: 400px !important; /* Cambia el ancho a 400px, !important para anular reglas previas */
+    }
+
+    /* Ajustes para el tamaño de fuente en las listas dentro de las skill cards */
+    .skill-card__body ul {
+        font-size: 2.5rem !important; /* Cambia el tamaño de fuente a 2.5rem, !important para anular reglas previas */
+    }
+
+    /* Ajustes para la disposición y ancho en la sección "Acerca de mí" */
+    .aboutMe__content {
+        display: flex; /* Cambia a un diseño flexible */
+        flex-direction: row !important; /* Cambia la dirección de flexión a fila, !important para anular reglas previas */
+        width: 80%; /* Cambia el ancho al 80% */
+    }
+
+    /* Ajustes para el ancho de la imagen en la sección "Acerca de mí" */
+    .aboutMe__content__img {
+        width: 40% !important; /* Cambia el ancho al 40%, !important para anular reglas previas */
+    }
+
+    /* Ajustes para el ancho de los logos sociales en la sección "Acerca de mí" */
+    .container__social__logo {
+        width: 4rem !important; /* Cambia el ancho a 4rem, !important para anular reglas previas */
+    }
+}

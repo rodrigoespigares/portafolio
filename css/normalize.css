@@ -1,0 +1,35 @@
+/* Improto la funte nunito con el weight de 400 y 700*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    /*Establezco el tamaño a 10px con el porcentaje*/
+    font-size: 62.5%;
+    /*Elimino la decoracion de las listas*/
+    list-style: none;
+    /* Establezco padding y margin a 0*/
+    padding: 0;
+    margin: 0;
+    /* Uso la fuente*/
+    font-family: 'Nunito', sans-serif;
+    /* Establezco el box sizing como border box*/
+    box-sizing: border-box;
+}
+/* Declaracion de variables*/
+:root{
+    /* Color proncipal */
+    --primary: #97DFF5;
+    /* Letra para enlaces */
+    --letter: #000;
+    /* Para los hover */
+    --letter-hover : #fff;
+    /* Color secundario */
+    --secondary: #FFAB40;
+}
+/* Declaro el body y sus caracteristicas*/
+body{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
